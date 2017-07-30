@@ -1,0 +1,386 @@
+@import "_mixins.scss";
+@import "_color.scss";
+
+@font-face {
+  font-family: 'iransans';
+  src: url("../fonts/iran_sans/woff/IRANSansWeb.woff") format("woff");
+  src:url('../fonts/iran_sans/woff/IRANSansWeb(FaNum).woff') format('woff');
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+html,body{
+	font-family:'iransans';	
+	font-size: 14px;
+}
+
+/*----- Start > Reset css -----*/
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	list-style-type: none;	
+}
+// .row{
+// 	margin-right: 0;
+// 	margin-left:0;
+// }
+/*----- End > Reset css -----*/
+
+/*----- Start > Header css -----*/ 
+.header-main{
+	height:80px;
+	margin-top: 10px;
+	}
+/*----- Start > Search -----*/ 
+.search-bar{
+	position: relative;
+	margin-top:20px;
+	.input-text{
+		height: 36px;
+		width: 100%;
+		padding:6px 15px;
+		border:solid 1px $gray-color-220;
+		@include border-radius(20px);
+	}
+	input:focus{
+		border-color:$main-color;
+		outline:none;
+	}
+	input::placeholder{
+		color:$gray-color-160;
+	}
+	.icon{
+		position:absolute;
+		left:12px;
+		top:7px;
+		color: $gray-color-160;
+		font-size: 1.6rem;
+		&:hover{
+			color:$gray-color-100;
+		}
+	}
+}
+/*----- End > Search -----*/ 
+
+/*----- Start > Sign in/up -----*/ 
+.sign-in-up
+	ul{
+		margin-top:22px;
+		li{
+			border-right: 1px solid $gray-color-220;
+			.login{
+				display: inline;
+				padding: 3px;
+				a{
+					cursor: pointer;
+					&:hover{
+						color:$main-color-light;						
+						text-decoration: none;
+					}
+					i{
+						font-size: 1.6rem;
+						position: relative;
+						top: 7px;
+						padding-left: 5px;
+					}
+					color:$main-color;
+				}					
+			}
+			.register{
+				display: inline;
+				padding: 3px;
+				a{
+					cursor: pointer;
+					&:hover{
+						color:$green-color-light;						
+						text-decoration: none;
+					}
+					i{
+						font-size: 1.6rem;
+						position: relative;
+						top: 7px;
+						padding-left: 5px;
+					}
+					color:$green-color;
+				}			
+			}
+			display: inline;
+			padding:5px;
+		}
+	}
+/*----- End > Sign in/up -----*/ 
+
+/*----- Start > Basket icon -----*/ 
+.basket-icon{
+	position: relative;
+	text-align: left;
+	top: 20px;
+	.empty{
+		color:$gray-color-200;
+	}
+	.added{
+			color:$green-color;
+	}
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+		span{
+			font-size: 2.5rem;
+			i{
+				font-size: 1rem;
+				position: relative;
+				right: 25px;
+				bottom: 4px;
+			}
+		}
+	}
+}
+/*----- End > Basket icon -----*/
+/*----- Start > navbar -----*/
+.navbar-vasmegisoo{
+	margin-bottom:0;
+	background: $main-color;
+	border:none;
+	@include border-radius(0);
+	.navbar-collapse{
+		.navbar-center-vasmegisoo{
+			display: inline-block;
+			.dropdown:hover .dropdown-menu {
+				li{
+					a{
+						color:$gray-color-60; 
+					}
+				}
+			}
+			>li{
+				@include transition(.5s);
+				&:hover{
+					background-color:$main-color-dark;
+				}
+				>a{
+					cursor: pointer !important;
+					color: $white-color;
+					
+				}
+			}
+			
+		}
+	}
+}
+/*----- End > navbar -----*/
+/*----- Start > Breadcrumb -----*/
+.vg-breadcrumb{	
+	ol{	
+		margin:0;
+		padding-left: 0;
+		margin-left:15px;
+		li>a{
+				text-decoration: none;
+				font-size:0.8rem;
+		}
+		li+li{			
+			&:before{
+				font-family: 'font-vg';
+				content:"\e912";
+				font-size:0.7rem; 
+			}			
+		}
+	}
+}
+.back-fluid{
+		background-color:$gray-color-245;
+		margin-left:-15px;
+		margin-right: -15px;
+	}
+/*----- End > Breadcrumb -----*/
+
+/*----- Start > profile-cover -----*/
+.profile-cover{
+	height: 140px;
+	img{
+		position: absolute;
+	}
+	.personal-info{
+		position: relative;
+		img{
+			position: absolute;
+			top: 26px;
+			right: 25px;
+			width: 90px;
+    		height: 90px;
+			@include border-radius(54px);
+			border: 3px solid rgb(255,255,255);
+		}
+		p{
+			position: absolute;
+			top:50px;
+			right: 140px;
+			font-size: 1.2rem;
+			color:$white-color;
+		}
+		ul{
+			position: absolute;
+			right: 140px;
+			top:75px;
+			li{
+				display: inline-block;
+				a{
+					&:hover{
+						text-decoration: none;
+						color:$white-color;
+					}
+					padding-left: 3px;
+					color:$gray-color-220;
+					font-size: 0.9rem;
+					cursor: pointer;
+				}
+				span{
+					font-size: 0.8rem;
+					color:$gray-color-220;
+					padding-left: 3px;
+				}
+			}
+		}
+	}
+	.btn-exit{
+		position: relative;
+		a{
+			i{	
+				position: absolute;
+				right: 6px;
+				top: 6px;
+				font-size: 22px;
+				&:hover{
+					color:red;
+				}
+			}
+			p{
+				margin-top: 7px;
+				margin-right: 15px;
+			}
+			text-align: center;
+			position: absolute;
+			color: $white-color;
+			width: 120px;
+			height: 36px;
+			left:25px;
+			top:50px;
+			@include border-radius(30px);
+			@include transition(.3s);
+			border:1px solid $white-color;
+			background: rgba(255,255,255,.4);
+			cursor: pointer;
+			&:hover{
+				border:1px solid red;
+				background: rgba(255,255,255,.9);
+				color:red;
+				@include transition(.3s);
+				text-decoration: none;
+				
+			}
+		}
+		
+	}
+	
+
+}
+
+/*----- End > profile-cover -----*/
+
+/*----- Start > profile-tabs -----*/
+.profile-tabs{
+	position:relative;
+	.nav-tabs > li.active > a{
+		p{
+			color:$main-color;
+		}
+		border: none;
+		background: $gray-color-245;
+		border-bottom: 2px solid $main-color;
+	}
+	ul{
+		border:1px solid $gray-color-220;
+		li{
+			
+			text-align: center;
+			width: 16.66%;
+			
+			a{
+				&:hover{
+					@include transition(.5s);
+					background:$gray-color-245;
+					color:$gray-color-60;
+					p{
+						color:$main-color;
+					}
+				}
+				
+				i{
+					font-size: 2rem;
+					color:$main-color;
+					
+				}
+				p{
+					margin:0;
+					 color:$gray-color-120;
+				}
+			}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			position: absolute;
+			width: 100%;
+			border-right:solid 1px $gray-color-220;
+			border-left:solid 1px $gray-color-220;
+			border-bottom:solid 1px $gray-color-220;
+			border-radius: 0px 0px 5px 5px;
+			padding:15px;
+		}
+		.titr{
+			color:$main-color;
+			border-bottom: 1px solid $main-color;
+			margin: 25px 10px;
+		}
+	}
+}
+/*----- End > profile-tabs -----*/
+
+/*----- Start > form -----*/
+// .input-style{
+// 	border: 1px solid $gray-color-220;
+// 	@include border-radius(25px);
+// 	height: 36px;
+// 	width: 100%;
+// 	padding-right: 15px;
+// 	padding-left: 15px;
+// 	margin-bottom: 15px;
+// }
+
+.label-style{
+	font-size:0.9rem;
+	color:$gray-color-120;
+	margin-right: 15px;
+}
+.input-style{
+		height: 36px;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		border:solid 1px $gray-color-220;
+		@include border-radius(20px);
+		margin-bottom: 15px;
+	}
+	input:focus{
+		border-color:$main-color;
+		outline:none;
+	}
+	input::placeholder{
+		color:$gray-color-160;
+	}
+/*----- End > form -----*/
+
+
+
+@import "_responsive.scss";

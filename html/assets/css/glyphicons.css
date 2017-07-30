@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'font-vg';
+  src:  url('../fonts/font-vg.eot?xmcmin');
+  src:  url('../fonts/font-vg.eot?xmcmin#iefix') format('embedded-opentype'),
+    url('../fonts/font-vg.ttf?xmcmin') format('truetype'),
+    url('../fonts/font-vg.woff?xmcmin') format('woff'),
+    url('../fonts/font-vg.svg?xmcmin#font-vg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-vg' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-input:before {
+  content: "\e90f";
+}
+.icon-add:before {
+  content: "\e910";
+}
+.icon-arrow-down:before {
+  content: "\e911";
+}
+.icon-arrow-left:before {
+  content: "\e912";
+}
+.icon-arrow-right:before {
+  content: "\e913";
+}
+.icon-arrow-up:before {
+  content: "\e914";
+}
+.icon-basket:before {
+  content: "\e900";
+}
+.icon-comments:before {
+  content: "\e901";
+}
+.icon-creadit-card:before {
+  content: "\e902";
+}
+.icon-creadit-cards:before {
+  content: "\e903";
+}
+.icon-delete:before {
+  content: "\e904";
+}
+.icon-edit-pencil:before {
+  content: "\e905";
+}
+.icon-exit:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e907";
+}
+.icon-google-plus:before {
+  content: "\e908";
+}
+.icon-heart:before {
+  content: "\e909";
+}
+.icon-key:before {
+  content: "\e90a";
+}
+.icon-register:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-user:before {
+  content: "\e90d";
+}
+.icon-wallet:before {
+  content: "\e90e";
+}

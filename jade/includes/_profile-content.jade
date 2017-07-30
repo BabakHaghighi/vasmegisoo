@@ -1,0 +1,90 @@
+//- ----- Start > profile-content -----
+.container
+    .row
+        .col-lg-12
+            //- ----- Start > profile-content -----
+            .profile-cover
+                img(src="assets/img/profile/cover.jpg")
+                .personal-info
+                    img(src="assets/img/profile/personal-photo.jpg")
+                    p بهناز حقیقی
+                    ul
+                        li
+                            a(herf="#") اضافه
+                        li
+                            span |
+                        li 
+                            a(href="#") حذف
+                        li
+                            span (تصویر)
+                .btn-exit
+                    a(href="#")
+                        p خروج
+                        i.icon-exit
+            //- ----- End > profile-content -----
+        .col-lg-12
+            //- ----- Start > profile-tabs -----
+            .profile-tabs
+                ul.nav.nav-tabs
+                    li.active(role="presentation")
+                        a(data-toggle="tab",href="#personal") 
+                            i.icon.icon-user
+                            p مشخصات کاربر
+                    li(role="presentation")
+                        a(data-toggle="tab",href="#purchases")
+                             i.icon.icon-basket
+                             p خریدهای من
+                    li(role="presentation")
+                        a(data-toggle="tab",href="#favorites")
+                             i.icon.icon-heart
+                             p لیست مورد علاقه
+                    li(role="presentation")
+                        a(data-toggle="tab",href="#wallet")
+                             i.icon.icon-wallet
+                             p کیف پول
+                    li(role="presentation")
+                        a(data-toggle="tab",href="#transaction")
+                             i.icon.icon-creadit-cards
+                             p تراکنش
+                    li(role="presentation")
+                        a(data-toggle="tab",href="#comments")
+                             i.icon.icon-comments
+                             p نظرات من
+                .tab-content
+                    #personal.tab-pane.fade.in.active
+                        .tab-personal
+                            .col-lg-12
+                                .titr
+                                    h4 اطلاعات شخصی
+                                    form
+                                .col-lg-4
+                                    label.label-style(for="name") نام و نام خانوادگی
+                                    br
+                                    input.input-style(type="text" required name="name" value="بهناز حقیقی")                                   
+                                .col-lg-4
+                                    label.label-style(for="name") شماره موبایل
+                                    br
+                                    input.input-style(type="text", required name="phone", value="09126443325", pattern="[0-9]{10}")      
+                                 .col-lg-4
+                                    label.label-style(for="name") ایمیل
+                                    br
+                                    input.input-style(type="email", required name="email", value="b.haghighi@gmail.com", pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")
+                                .col-lg-4
+                                    label.label-style(for="name")    تاریخ تولد
+                                    br
+                                    input.input-style(type="text" required name="name" value="۱۳۵۵/۱۲/۱۵") 
+                    #purchases.tab-pane.fade
+                        p color that goes on wet and dries to a soft mat
+                    #favorites.tab-pane.fade
+                        p color that goes on wet and dries to a soft mat
+                    #wallet.tab-pane.fade
+                        p color that goes on wet and dries to a soft mat
+                    #transaction.tab-pane.fade
+                        p color that goes on wet and dries to a soft mat
+                    #comments.tab-pane.fade
+                        p color that goes on wet and dries to a soft mat
+            //- ----- End > profile-tabs -----     
+
+        //- script(src="assets/js/foundation.min.js")
+        //- script(src="assets/js/setup.js")
+//- ----- End > profile-cover -----
